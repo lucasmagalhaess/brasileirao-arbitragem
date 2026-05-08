@@ -112,3 +112,11 @@ Acesse o Airflow em `http://localhost:8082` e ative a DAG `pipeline_brasileirao`
 
 [![GitHub](https://img.shields.io/badge/GitHub-lucasmagalhaess-black)](https://github.com/lucasmagalhaess)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-lucasmagalhaes--data-blue)](https://linkedin.com/in/lucasmagalhaes-data)
+
+## Limitações dos dados
+
+A API football-data.org no plano gratuito não retorna o nome do árbitro em todas as partidas do Brasileirão 2025. Das 380 partidas processadas, apenas 13 árbitros foram identificados — as demais partidas vieram sem essa informação.
+
+Isso limita a análise de arbitragem mas não compromete o pipeline. Em produção, a solução seria usar uma API paga com cobertura completa ou complementar com scraping de fontes como CBF ou Globo Esporte.
+
+Essa limitação foi identificada durante a análise dos dados e documentada como parte do processo — entender a qualidade da fonte é tão importante quanto construir o pipeline.
