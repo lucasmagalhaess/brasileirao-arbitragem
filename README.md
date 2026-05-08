@@ -4,6 +4,8 @@ Pipeline de dados completo para análise de arbitragem do Campeonato Brasileiro 
 
 ## Arquitetura
 
+![Arquitetura do Pipeline](docs/arquitetura_brasileirao.png)
+
 O pipeline segue o fluxo clássico de engenharia de dados em camadas:
 
 **Ingestão:** Python consome a API football-data.org extraindo 380 partidas, classificação e artilheiros do Brasileirão 2025.
