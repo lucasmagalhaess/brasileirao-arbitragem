@@ -108,7 +108,7 @@ Acesse o Airflow em `http://localhost:8082` e ative a DAG `pipeline_brasileirao`
 
 ## Autor
 
-**Lucas Magalhães** — Analista de Dados em transição para Engenharia de Dados
+**Lucas Magalhães** — Engenheiro de Dados
 
 [![GitHub](https://img.shields.io/badge/GitHub-lucasmagalhaess-black)](https://github.com/lucasmagalhaess)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-lucasmagalhaes--data-blue)](https://linkedin.com/in/lucasmagalhaes-data)
