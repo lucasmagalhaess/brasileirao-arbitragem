@@ -5,3 +5,4 @@ terraform/terraform.tfstate*
 __pycache__/
 *.pyc
 .DS_Store
+terraform/brasileirao-arbitragem-c713c5f62e2b.json
