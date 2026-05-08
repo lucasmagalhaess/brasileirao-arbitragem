@@ -8,12 +8,12 @@ sys.path.insert(0, '/opt/airflow/src')
 
 os.environ["FOOTBALL_API_KEY"] = "0a3cf8d26fec4c7786e5f974af4eb5c9"
 os.environ["FOOTBALL_API_URL"] = "https://api.football-data.org/v4"
-os.environ["MINIO_ENDPOINT"] = "minio:9002"
+os.environ["MINIO_ENDPOINT"] = "minio:9000"
 os.environ["MINIO_ACCESS_KEY"] = "minioadmin"
 os.environ["MINIO_SECRET_KEY"] = "minioadmin"
 os.environ["MINIO_BUCKET"] = "brasileirao-raw"
-os.environ["GCP_PROJECT_ID"] = "pipeline-filmes"
-os.environ["GCP_BUCKET"] = "pipeline-filmes-data-lake"
+os.environ["GCP_PROJECT_ID"] = "brasileirao-arbitragem"
+os.environ["GCP_BUCKET"] = "brasileirao-arbitragem-data-lake"
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/opt/airflow/credentials/credentials.json"
 
 default_args = {

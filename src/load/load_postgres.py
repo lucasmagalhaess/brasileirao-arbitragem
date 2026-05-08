@@ -13,8 +13,8 @@ MINIO_SECRET_KEY = os.getenv("MINIO_SECRET_KEY", "minioadmin")
 MINIO_BUCKET = os.getenv("MINIO_BUCKET", "brasileirao-raw")
 
 DB_CONFIG = {
-    "host": "localhost",
-    "port": 5433,
+    "host": "postgres",
+    "port": 5432,
     "database": "airflow",
     "user": "airflow",
     "password": "airflow"

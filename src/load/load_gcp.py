@@ -11,10 +11,10 @@ MINIO_ENDPOINT = os.getenv("MINIO_ENDPOINT", "localhost:9002")
 MINIO_ACCESS_KEY = os.getenv("MINIO_ACCESS_KEY", "minioadmin")
 MINIO_SECRET_KEY = os.getenv("MINIO_SECRET_KEY", "minioadmin")
 MINIO_BUCKET = os.getenv("MINIO_BUCKET", "brasileirao-raw")
-GCP_PROJECT_ID = os.getenv("GCP_PROJECT_ID", "pipeline-filmes")
-GCP_BUCKET = os.getenv("GCP_BUCKET", "pipeline-filmes-data-lake")
+GCP_PROJECT_ID = os.getenv("GCP_PROJECT_ID", "brasileirao-arbitragem")
+GCP_BUCKET = os.getenv("GCP_BUCKET", "brasileirao-arbitragem-data-lake")
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/workspaces/pipeline-filmes/terraform/credentials.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/opt/airflow/credentials/credentials.json"
 
 def read_from_minio(filename):
     client = Minio(MINIO_ENDPOINT, access_key=MINIO_ACCESS_KEY, secret_key=MINIO_SECRET_KEY, secure=False)
