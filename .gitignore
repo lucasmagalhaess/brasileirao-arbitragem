@@ -1,0 +1,7 @@
+.env
+terraform/credentials.json
+terraform/.terraform/
+terraform/terraform.tfstate*
+__pycache__/
+*.pyc
+.DS_Store
